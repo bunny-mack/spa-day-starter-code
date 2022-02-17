@@ -1,7 +1,7 @@
 package org.launchcode.spaday.models;
 
 public class User {
-
+//hopefully this works
     private String username;
     private String email;
     private String password;
