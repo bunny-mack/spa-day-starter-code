@@ -5,6 +5,7 @@ public class User {
     private String username;
     private String email;
     private String password;
+    private String error;
 
     public String getUsername() {
         return username;
@@ -28,5 +29,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
     }
 }

@@ -6,20 +6,25 @@
 </head>
 <body class="container">
 
+<!--<p th:if = "{username}" >ERROR MESSAGE</p>-->
+
 <!--not sure about action/user here-->
 <form method="post" action="/user">
     <label>Username
-        <input type="text" name="username">
+        <input type="text" name="username" th:value="${username}"/>
     </label>
     <label>Email
-        <input type="email" name="email">
+        <input type="email" name="email" th:value="${email}"/>
     </label>
     <label>Password
-        <input type="password" name="password">
+        <input type="password" name="password"/>
     </label>
     <label>Confirm Password
-        <input type="password" name="verify">
+        <input type="password" name="verify"/>
     </label>
+
+    <p th:text="${error}"></p>
+
     <input type="submit" value="Add">
 </form>
 

@@ -28,7 +28,8 @@ public class UserController {
         if (user.getPassword().equals(verify)) {
             return "/user/index.html";
         } else {
-            return "/user/add.html";
+            model.addAttribute("error", "Password should match");
+            return "/user/add";
         }
     }
 }
